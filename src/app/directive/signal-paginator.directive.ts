@@ -16,8 +16,8 @@ export class SignalPaginatorDirective<T> implements OnChanges {
   @Output() paginationState = new EventEmitter<{ page: number; pageSize: number }>();
 
   // Declare private properties
-  private currentPage = signal(1);
-  private totalPages = computed(() => Math.ceil(this.filteredAndSortedItems().length / this.pageSize));
+  currentPage = signal(1);
+  totalPages = computed(() => Math.ceil(this.filteredAndSortedItems().length / this.pageSize));
 
   // explanation
   // The filteredAndSortedItems computed property filters and sorts the items based on the filterFn and sortFn properties.
