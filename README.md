@@ -1,4 +1,13 @@
-# SignalsBasedUpdatesDemo
+# Pagination Directive with Angular Signals
+
+A reusable Angular directive for handling pagination logic, built using Angular's **signals** for reactivity. This directive allows you to manage pagination efficiently while delegating the display logic to the parent component.
+
+## Features
+
+- **Reactive State Management**: Powered by Angular signals for seamless reactivity.
+- **Dynamic Pagination**: Automatically adapts to changes in data or page size.
+- **Sorting and Filtering**: Supports custom sort and filter functions.
+- **Flexible Integration**: Emits paginated items and pagination state for external handling.
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
