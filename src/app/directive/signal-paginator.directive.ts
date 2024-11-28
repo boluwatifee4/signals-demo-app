@@ -57,21 +57,18 @@ export class SignalPaginatorDirective<T> {
   nextPage() {
     if (this.currentPage() < this.totalPages()) {
       this.currentPage.update((page) => page + 1);
-      this.updateCurrentPageItems();
     }
   }
 
   previousPage() {
     if (this.currentPage() > 1) {
       this.currentPage.update((page) => page - 1);
-      this.updateCurrentPageItems();
     }
   }
 
   goToPage(page: number) {
     if (page >= 1 && page <= this.totalPages()) {
       this.currentPage.set(page);
-      this.updateCurrentPageItems();
     }
   }
 }
